@@ -1,5 +1,5 @@
 FROM nginx:mainline-alpine
-WORKDIR /app
+WORKDIR /web
 
 RUN addgroup -S -g 3000 app && adduser --uid 3000 -G app -SDH app
 
