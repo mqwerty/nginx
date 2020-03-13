@@ -1,14 +1,14 @@
 version: '3'
 services:
-    nginx:
-        container_name: nginx
-        build: .
-        image: edmitry/nginx
-        restart: always
-        ports:
-            - 80:80
-        healthcheck:
-            test: ["CMD", "curl", "-fI", "http://localhost/nginx-status"]
-            interval: 1s
-            timeout: 1s
-            retries: 10
+  nginx:
+    container_name: nginx
+    build: .
+    image: edmitry/nginx
+    restart: always
+    ports:
+      - 80:80
+    healthcheck:
+      test: ["CMD", "curl", "-fI", "http://localhost/nginx-status"]
+      interval: 1s
+      timeout: 1s
+      retries: 10
